@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise Dashboard</title>
+  
+  <!-- Corrected Google Fonts Integration -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+  <!-- 1. NEW SIDEBAR NAVIGATION PANEL -->
+  <aside class="sidebar">
+    <div class="logo">SpendWise</div>
+    <nav class="nav-links">
+      <a href="#" class="nav-item active">Dashboard</a>
+      <a href="#" class="nav-item">Analytics</a>
+      <a href="#" class="nav-item">Expenses</a>
+      <a href="#" class="nav-item">Budgets</a>
+      <a href="#" class="nav-item">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- 2. MAIN WORKSPACE WRAPPER -->
+  <div class="main-content">
+    
+    <!-- New Top Header Component -->
+    <header class="header">
+      <h1 class="header-title">Financial Overview</h1>
+      <div class="user-profile">
+        <span class="user-name">Alex Mwangi</span>
+        <div class="avatar" aria-hidden="true">AM</div>
+      </div>
+    </header>
+    <!-- 3. THE SIX CARDS GRID -->
+    <main class="dashboard-grid">
+      
+      <!-- Card 1: Food -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">🍔</span>
+          <span class="card-tag">Monthly</span>
+        </div>
+        <h2 class="card-title">Food & Dining</h2>
+        <p class="card-amount">KES 14,500</p>
+        <p class="card-status text-negative">Over budget by 5%</p>
+      </div>
+
+      <!-- Card 2: Transport -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">🚗</span>
+          <span class="card-tag">Monthly</span>
+        </div>
+        <h2 class="card-title">Transport</h2>
+        <p class="card-amount">KES 8,200</p>
+        <p class="card-status text-neutral">Remaining KES 1,800</p>
+      </div>
+
+      <!-- Card 3: Rent -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">🏠</span>
+          <span class="card-tag">Fixed</span>
+        </div>
+        <h2 class="card-title">Rent & Housing</h2>
+        <p class="card-amount">KES 45,000</p>
+        <p class="card-status text-positive">Paid on 1st</p>
+      </div>
+
+      <!-- Card 4: Entertainment -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">🎬</span>
+          <span class="card-tag">Leisure</span>
+        </div>
+        <h2 class="card-title">Entertainment</h2>
+        <p class="card-amount">KES 6,000</p>
+        <p class="card-status text-negative">Remaining KES 500</p>
+      </div>
+
+      <!-- Card 5: Savings -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">🐷</span>
+          <span class="card-tag">Goal</span>
+        </div>
+        <h2 class="card-title">Savings</h2>
+        <p class="card-amount">KES 20,000</p>
+        <p class="card-status text-positive">Goal 100% reached</p>
+      </div>
+
+      <!-- Card 6: Utilities -->
+      <div class="card" tabindex="0">
+        <div class="card-header">
+          <span class="card-icon">⚡</span>
+          <span class="card-tag">Fixed</span>
+        </div>
+        <h2 class="card-title">Utilities</h2>
+        <p class="card-amount">KES 5,400</p>
+        <p class="card-status text-neutral">Due in 4 days</p>
+      </div>
+
+    </main>
+    </div> <!-- Closes div.main-content -->
+  </div> <!-- Closes your new .dashboard wrapper -->
+    <script src="script.js"></script>
+</body>
+</html>
+
